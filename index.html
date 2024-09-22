@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        .search-input-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px; /* Space below the input */
+        }
+
+        .search-icon, .microphone-icon {
+            position: absolute;
+            color: #aaa;
+            pointer-events: none;
+        }
+
+        .search-icon {
+            left: 15px;
+        }
+
+        .microphone-icon {
+            right: 15px;
+        }
+
+        .search-input {
+            width: 400px;
+            padding: 10px 40px; /* Extra padding for icons */
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 24px;
+            outline: none;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Google_logo.svg/1280px-Google_logo.svg.png" alt="Google Logo" class="logo" width="272">
+
+    <div class="search-input-container">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" class="search-input" placeholder="Search Google or type a URL">
+        <i class="fas fa-microphone microphone-icon"></i>
+    </div>
+
+    <div class="buttons">
+        <button class="button">Google Search</button>
+        <button class="button">I'm Feeling Lucky</button>
+    </div>
+</body>
+</html>
