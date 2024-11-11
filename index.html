@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .logo {
+            margin-bottom: 20px;
+            width: 400px;
+            height: 200px;
+        }
+        .search-input-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px; /* Space below the input */
+        }
+        .search-icon, .camera-icon, .microphone-icon {
+            position: absolute;
+            display: flex;
+            color: #aaa;
+            pointer-events: none;
+        }
+        .search-icon {
+            left: 15px;
+        }
+        .microphone-icon {
+            right: 45px;
+            width: 25px;
+            height: 25px;
+        }
+        .camera-icon{
+            right: 15px;
+            width: 20px;
+            height: 25px;
+        }
+        .search-input {
+            width: 500px;
+            padding: 10px 40px; /* Extra padding for icons */
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 24px;
+            outline: none;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #e0e0e0;
+        }
+        footer{
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                background-color: #f2f2f2;
+                padding: 10px 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                font-size: 14px;
+                color: #70757a;
+              }
+        .footer-container{
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: space-between;
+        }
+        .footer-left a, .footer-right a{
+            color: #70757a;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        .footer-left a:hover, .footer-right a:hover{
+            text-decoration: underline;
+        }
+        
+        ul{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            list-style: none;
+        }
+        /* .off{
+            position: relative;
+            color: blue;
+            cursor: pointer;
+            text-decoration: none;
+            margin: 0% auto;
+            align-items: center;
+        }
+        .off a{
+            color: royalblue;
+            text-decoration: none;
+        }
+        .off a:hover{
+            text-decoration: underline;
+        } */
+        ul li a{
+            text-decoration: none;
+        }
+        .offer{
+            color: #aaa;
+            display: flex;
+            flex-direction: row;
+        }
+        .download{
+            width: 15px;
+            height: 15px;
+        }
+        header{
+            align-items: center;
+            position: relative;
+            height: 0.5ch;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            width: 650px;
+            list-style: none;
+           /* background-color: #e0e0e0;*/
+            padding: 0px;
+            font-size: 14px;
+        }
+        .header-right{
+            height: 90px;
+            text-align: right;
+            width: 80px;
+            margin-top: 10%;
+            display: flex;
+            flex-direction: row;
+            justify-items: flex-end;
+        }
+        .header-right a{
+            color: #70757a;
+            text-decoration: none;
+            margin-top: 5px;
+            justify-items: right;
+        }
+        ul{
+            text-align: right;
+           color: #70757a;
+            text-decoration: none;
+            margin-right: 5px;
+            justify-items: left;
+        }
+        
+    .oct{
+        color: #70757a;
+        margin: 5px;
+    }
+   /* li{
+        display: flex;
+        width: 50px;
+        justify-content: space-between;
+    }*/
+    </style>
+</head>
+<header>
+    <div class="header-right">
+        <ul class="oct">
+            <a href="#">Gmail</a>
+            <a href="#">Images</a>
+        </ul>
+    </div>
+</header>
+<body>
+    <img src="./moonligth.png" alt="Google logo" class="logo">
+    <div class="search-input-container">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" class="search-input">
+        <i class=" microphone-icon">
+            <img src="./google-voice.png" alt="google-voice">
+        </i>
+        <i class="camera-icon">
+            <img src="./image-search.png" alt="google">
+        </i>
+    </div>
+    <div class="buttons">
+        <button class="button">Google Search</button>
+        <button class="button">I'm Feeling Lucky</button>
+    </div>
+    <div class="offer" >
+        <p>Google Offered in:</p>
+        <ul class="list">
+            <li><a href="#">Yoruba</a></li>   
+            <li><a href="#">Hausa</a></li>
+            <li><a href="#">Igbo</a></li>
+            <li><a href="#">Nigeria pidgin</a></li>
+        </ul>
+    </div>
+</body>
+<footer>
+    <div class="footer-left">
+        <a href="#">Nigeria</a>
+        <a href="#">About</a>
+        <a href="#">Advertising</a>
+        <a href="#">Bussiness</a>
+        <a href="#">How Search Works</a>
+    </div>
+    <div class="footer-left">
+        <img src="./download.png" alt="download" class="download">
+        <a href="#">Our Third Decade Climate Action:join us</a>
+    </div>
+    <div class="footer-right">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Settings</a>
+    </div>
+</footer>
+</html>
